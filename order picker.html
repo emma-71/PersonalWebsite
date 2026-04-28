@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pick a random order!</title>
+  <style>
+    body {
+      background-color: #c40000;
+      color: #e8c900;
+      text-align: center;
+      font-family: "Times New Roman", serif;
+    }
+
+    img {
+      width: 300px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #65000B;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #e8c900;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <h1>Feeling Indecisive?</h1>
+  <p>Click the button for a random order!
+<br>
+<br>
+<style>
+  p {
+    font-size: 20px;
+  }
+</style>
+<img id="combo" src="https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/mystery%20box.png">
+
+<br>
+
+<button onclick="showCombo()">New Combo</button>
+
+<script>
+  const combos = [
+    "https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/dino%20nuggies.jpeg",
+    "https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/grimace%20shake.avif",
+    "https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/burger.jpg",
+    "https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/mcdawnalds.jpg",
+    "https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/ketchup%20with%20a%20side%20of%20fries.png",
+    "https://uploads.onecompiler.io/44jnx2dv2/44kkd4svm/ice%20cream%20cone.jpg"
+  ];
+
+  function showCombo() {
+    const image = document.getElementById("combo");
+    image.src = combos[Math.floor(Math.random() * combos.length)];
+  }
+</script>
+<br>
+<br>
+<br>
+<br>
+
+<a href="index.html" class="home-link">Home</a>
+<style>
+  a.home-link {
+    color: #e8c900;
+  }
+</style>
+</body>
+</html>
